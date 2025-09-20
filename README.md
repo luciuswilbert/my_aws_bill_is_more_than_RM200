@@ -1,1 +1,0 @@
-# my_aws_bill_is_more_than_RM200
