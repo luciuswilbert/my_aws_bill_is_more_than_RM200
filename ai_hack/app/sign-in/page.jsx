@@ -57,7 +57,6 @@ export default function LoginPage() {
         {/* Back Button */}
         <Link href={"/"}>
         <Button
-          onClick={() => router.back()}
           className=" bg-transparent hover:bg-gray-400 hover:text-white flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
