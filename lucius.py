@@ -12,7 +12,7 @@ def get_user_input():
     
     # Check if description is empty
     if not description:
-        description = "Generate new idea"
+        description = "Generate new idea!"
     
     return template, persona, description
 
