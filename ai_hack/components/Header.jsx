@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { LogOut, Menu, X } from "lucide-react"
 
@@ -42,9 +43,9 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
-              const isActive = pathname === item.href
+              const isActive = pathname.includes(item.href)
               return (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className={`transition-colors duration-200 font-medium ${
@@ -54,7 +55,7 @@ export function Header() {
                   }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               )
             })}
           </nav>
@@ -91,7 +92,7 @@ export function Header() {
               {navItems.map((item) => {
                 const isActive = pathname === item.href
                 return (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className={`block px-3 py-2 rounded-md transition-colors duration-200 ${
@@ -102,7 +103,7 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )
               })}
               <div className="px-3 py-2">

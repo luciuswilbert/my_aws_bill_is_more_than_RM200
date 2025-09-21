@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { AlertTriangle } from "lucide-react"
-import { Alert, AlertDescription } from "@/@/components/ui/alert"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export function CommonPitfalls() {
   const pitfalls = [
