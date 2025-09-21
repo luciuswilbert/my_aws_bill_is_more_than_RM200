@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Sparkles } from "lucide-react"
+import Link from "next/link"
 
 export function Navigation() {
   return (
@@ -11,9 +12,11 @@ export function Navigation() {
         <span className="text-xl font-bold text-balance text-white">JustMarketing</span>
       </div>
       <div></div>
+      <Link href={"/sign-in"}>
       <Button variant="outline" className="border-black/20 hover:text-gray-500 bg-transparent text-white">
         Sign In
       </Button>
+      </Link>
     </nav>
   )
 }
