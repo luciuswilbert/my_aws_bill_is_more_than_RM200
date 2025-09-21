@@ -21,7 +21,7 @@ export function Header() {
   }, [])
 
   const navItems = [
-    { name: "Culture Check", href: "/culture-check" },
+    { name: "Culture Check", href: "/ai-checker" },
     { name: "Video Tool", href: "/video-tool" },
     { name: "Strategy Crafter", href: "/strategy" },
     { name: "Video Translate", href: "/video-translate" },
