@@ -165,3 +165,40 @@
   background-size: 40px 40px;
   animation: grid-move 20s linear infinite;
 }
+
+
+/* Custom animations for the marketing strategy crafter */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+/* Custom styles for the marketing strategy crafter */
+.marketing-strategy-bg {
+  background: white !important;
+  min-height: 100vh;
+}
