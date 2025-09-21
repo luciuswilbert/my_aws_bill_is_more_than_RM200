@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles, ArrowRight, Play } from "lucide-react"
+import Link from 'next/link';
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -42,10 +43,16 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="px-8 py-6 text-lg hover:bg-purple-600/90 animate-pulse-glow bg-purple-600 ">
-              Get Started Right Away
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+            <Link href = '/ai-checker'>
+              <Button 
+                size="lg" 
+                className="px-8 py-6 text-lg hover:bg-purple-600/90 animate-pulse-glow bg-purple-600"
+              >
+                Get Started Right Away
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+            
             <Button
               variant="outline"
               size="lg"
